@@ -16,11 +16,7 @@ protocol BookDelegate: class{
 class ViewModel{
     
     
-    var currentVolume: Volume!{
-        didSet{
-            getBookDetail(currentVolume)
-        }
-    }
+    var currentVolume: Volume!
     
     var volumes = [Volume]() {
         didSet{
@@ -41,7 +37,5 @@ extension ViewModel {
         }
     }
     
-    func getBookDetail(_ volume: Volume){
-        
-    }
+ 
 }
