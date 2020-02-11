@@ -42,6 +42,6 @@ extension ViewModel {
     }
     
     func getBookDetail(_ volume: Volume){
-        
+        // get all the Volume properties 
     }
 }

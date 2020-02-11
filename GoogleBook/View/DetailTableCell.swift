@@ -18,6 +18,8 @@ class DetailTableCell: UITableViewCell {
     @IBOutlet weak var detailPublisherLabel: UILabel!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     
+
+    
     static let identifier = "DetailTableCell"
     
     var volume: Volume! {

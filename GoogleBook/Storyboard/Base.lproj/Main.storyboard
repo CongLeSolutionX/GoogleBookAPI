@@ -80,11 +80,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="R9d-OY-J6d" kind="relationship" relationship="viewControllers" id="puM-0q-mxZ"/>
+                        <segue destination="wc4-Xj-vuz" kind="relationship" relationship="viewControllers" destinationCreationSelector="FavoriteSegue" id="vSn-Pg-EVv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCX-dk-VbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="100.29985007496252"/>
+            <point key="canvasLocation" x="-476" y="-260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ULT-e0-7ZP">
@@ -104,6 +105,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtB-Oo-js9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="100.29985007496252"/>
+        </scene>
+        <!--Favorite View Controller-->
+        <scene sceneID="2wr-pv-DGB">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewController" id="wc4-Xj-vuz" customClass="FavoriteViewController" customModule="GoogleBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z0Q-yx-IgN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="woc-C7-pRB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoriteTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="ouK-Oy-wjp" customClass="FavoriteTableCell" customModule="GoogleBook" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ouK-Oy-wjp" id="rEu-py-xaj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLB-QE-ze9">
+                                                    <rect key="frame" x="7" y="0.0" width="100" height="133"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="FEP-O1-gGe"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzU-he-PPK">
+                                                    <rect key="frame" x="115" y="11" width="245" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DLB-QE-ze9" firstAttribute="top" secondItem="rEu-py-xaj" secondAttribute="top" id="MGA-Hb-dCr"/>
+                                                <constraint firstAttribute="bottom" secondItem="DLB-QE-ze9" secondAttribute="bottom" id="axX-HE-HuM"/>
+                                                <constraint firstItem="DLB-QE-ze9" firstAttribute="leading" secondItem="rEu-py-xaj" secondAttribute="leading" constant="7" id="sLj-jz-1nj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="woc-C7-pRB" firstAttribute="leading" secondItem="JUo-K3-be4" secondAttribute="leading" id="7up-j9-qof"/>
+                            <constraint firstItem="woc-C7-pRB" firstAttribute="top" secondItem="JUo-K3-be4" secondAttribute="top" id="Jfq-tk-UdZ"/>
+                            <constraint firstItem="woc-C7-pRB" firstAttribute="trailing" secondItem="JUo-K3-be4" secondAttribute="trailing" id="MjS-iw-eBP"/>
+                            <constraint firstItem="woc-C7-pRB" firstAttribute="bottom" secondItem="z0Q-yx-IgN" secondAttribute="bottom" constant="-49" id="Z0N-mx-Rn8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JUo-K3-be4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="RaB-g8-VEB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Noq-fE-P5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="-717.39130434782612"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="3S4-pm-uTe">
@@ -186,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJ7-J9-p7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="949.47526236881572"/>
+            <point key="canvasLocation" x="3273" y="481"/>
         </scene>
         <!--Grid View Controller-->
         <scene sceneID="NVe-Lu-vb4">
@@ -278,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HG-dZ-j3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2865" y="929"/>
+            <point key="canvasLocation" x="3273" y="-320"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="awT-6N-ZMx">
@@ -350,32 +409,29 @@
                                                         <constraint firstAttribute="height" constant="200" id="ZCB-zg-cdk"/>
                                                     </constraints>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="32" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAC-e3-4hh">
-                                                    <rect key="frame" x="15" y="234" width="345" height="378"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="345" id="ffA-fV-BeQ"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUO-IQ-5Wy">
+                                                    <rect key="frame" x="15" y="234" width="335" height="396"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PAC-e3-4hh" firstAttribute="leading" secondItem="f2C-au-Dap" secondAttribute="leadingMargin" id="4Th-6F-qWf"/>
+                                                <constraint firstItem="wUO-IQ-5Wy" firstAttribute="trailing" secondItem="7Na-73-88Q" secondAttribute="trailing" id="5GG-7k-U3W"/>
                                                 <constraint firstItem="7Na-73-88Q" firstAttribute="top" secondItem="f2C-au-Dap" secondAttribute="topMargin" id="Ebw-U4-wfG"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="PAC-e3-4hh" secondAttribute="bottom" constant="18" id="KSJ-Rz-Jdq"/>
                                                 <constraint firstItem="7Na-73-88Q" firstAttribute="leading" secondItem="KUV-6K-1Ed" secondAttribute="trailing" constant="8" id="Mjl-9D-eUH"/>
                                                 <constraint firstItem="KUV-6K-1Ed" firstAttribute="leading" secondItem="f2C-au-Dap" secondAttribute="leadingMargin" id="NW9-qo-CBI"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7Na-73-88Q" secondAttribute="trailing" constant="10" id="SVi-bP-5ci"/>
                                                 <constraint firstItem="KUV-6K-1Ed" firstAttribute="top" secondItem="f2C-au-Dap" secondAttribute="topMargin" id="Swr-14-WV6"/>
-                                                <constraint firstItem="PAC-e3-4hh" firstAttribute="trailing" secondItem="f2C-au-Dap" secondAttribute="trailingMargin" id="l4U-Aw-c00"/>
-                                                <constraint firstItem="PAC-e3-4hh" firstAttribute="top" secondItem="KUV-6K-1Ed" secondAttribute="bottom" constant="8" id="lAz-G6-YVV"/>
+                                                <constraint firstItem="wUO-IQ-5Wy" firstAttribute="top" secondItem="KUV-6K-1Ed" secondAttribute="bottom" constant="8" id="fMJ-7h-SeD"/>
+                                                <constraint firstItem="wUO-IQ-5Wy" firstAttribute="leading" secondItem="KUV-6K-1Ed" secondAttribute="leading" id="lwS-ed-8ky"/>
+                                                <constraint firstItem="wUO-IQ-5Wy" firstAttribute="bottom" secondItem="f2C-au-Dap" secondAttribute="bottomMargin" id="saD-ki-NGc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="detailAuthorsLabel" destination="ttw-nN-lZx" id="ldn-9S-4Fy"/>
                                             <outlet property="detailBookImage" destination="KUV-6K-1Ed" id="bWo-Ft-JFU"/>
-                                            <outlet property="detailDescriptionLabel" destination="PAC-e3-4hh" id="P3v-WG-Kgb"/>
+                                            <outlet property="detailDescriptionLabel" destination="wUO-IQ-5Wy" id="M4v-cm-d47"/>
                                             <outlet property="detailPublishedDateLabel" destination="iBV-bs-g4f" id="T3A-AS-xMT"/>
                                             <outlet property="detailPublisherLabel" destination="5W7-Qj-lRj" id="v5e-tz-nTP"/>
                                             <outlet property="detailTitleLabel" destination="sDj-BQ-A0N" id="csL-lN-RLZ"/>
@@ -399,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kS-UL-sB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3701.5999999999999" y="308.9955022488756"/>
+            <point key="canvasLocation" x="4752.8000000000002" y="5.8470764617691158"/>
         </scene>
     </scenes>
 </document>

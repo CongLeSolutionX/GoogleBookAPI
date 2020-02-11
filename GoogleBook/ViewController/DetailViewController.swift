@@ -11,7 +11,8 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailTabelView: UITableView!
-    var favoriteSignal = false
+    
+    var isFavorite = false
     
     var viewModel: ViewModel! // dependency injection
     
@@ -19,31 +20,56 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDetailView()
-        setupFavoriteButton()
+        
     }
     
     private func setupDetailView() {
         detailTabelView.dataSource = self as UITableViewDataSource
         // detailTabelView.delegate = self as? UITableViewDelegate
         // viewModel.delegate = self
+        print("Im here in setupDetail\(isFavorite)")
+        setupFavoriteButton()
+        
         detailTabelView.tableFooterView = UIView(frame: .zero)
+        
+        
     }
     
     func setupFavoriteButton(){
-        let addToMyFavorite = UIBarButtonItem(title: "Add to favorite",
-                                              style: .plain,
-                                              target: self,
-                                              action: #selector(addToFavoriteTapped))
-        navigationItem.rightBarButtonItems = [addToMyFavorite]
+        checkFavBook()
+        if (isFavorite){
+            let addToMyFavorite = UIBarButtonItem(title: "Add to favorite",
+                                                  style: .plain,
+                                                  target: self,
+                                                  action: #selector(addToFavoriteTapped))
+            navigationItem.rightBarButtonItems = [addToMyFavorite]
+            
+        }
         
     }
     
     @objc func addToFavoriteTapped(){
         // save into CoreData
+        if (isFavorite){
+            coreDataServiceShared.saveVolume(viewModel.currentVolume)
+            print("Saved a favorite book to Core Data!")
+        } else {
+            coreDataServiceShared.removeVolume(viewModel.currentVolume)
+            print("Removed a favorite book from Core Data!")
+        }
         // open the list of current favorite books
-   
+        
     }
-    
+    // check if we have the volume in our CoreData yet
+    func checkFavBook(){
+        if(coreDataServiceShared.checkForVolume(viewModel.currentVolume)){
+            isFavorite = true
+        }
+        else {
+            isFavorite = false
+        }
+        
+    }
     
     
     

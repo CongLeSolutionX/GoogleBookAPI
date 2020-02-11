@@ -7,9 +7,7 @@
         <attribute name="imageUrl" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="CoreVolume" representedClassName="CoreVolume" syncable="YES"/>
     <elements>
-        <element name="CoreVolume" positionX="-63" positionY="-18" width="128" height="43"/>
-        <element name="CoreBookStorage" positionX="-63" positionY="-9" width="128" height="118"/>
+        <element name="CoreBookStorage" positionX="-351.9765625" positionY="-169.04296875" width="128" height="118"/>
     </elements>
 </model>
