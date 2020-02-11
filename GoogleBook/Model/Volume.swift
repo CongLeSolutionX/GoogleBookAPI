@@ -6,16 +6,15 @@
 //  Copyright © 2020 Enhance IT. All rights reserved.
 //
 
-import UIKit
-import CoreData 
-extension CodingUserInfoKey{
-    static let context = CodingUserInfoKey(rawValue: "context")
-}
+import Foundation
+import CoreData
+
 class VolumeResponse:  Decodable {
     var results: [Volume]
     private enum CodingKeys: String, CodingKey{
         case results = "items"
     }
+    
 }
 
 
@@ -27,6 +26,10 @@ class Volume: Decodable {
            case id
            case bookInfo = "volumeInfo"
        }
+    init(coreBook: CoreBookStorage){
+        id = coreBook.id!
+        bookInfo = Book(coreBook)
+    }
        
 }
    
@@ -55,6 +58,16 @@ class Volume: Decodable {
             case description
             case imageLinks
         }
+        
+        
+        init(_ coreBook: CoreBookStorage){
+            title = coreBook.title ?? "No title"
+            authors = [coreBook.authors ?? "No authors"]
+            description = coreBook.desc ?? "No desctiption"
+            imageLinks = ImageLinks(coreBook)
+        }
+        
+        
     }
     
     
@@ -62,6 +75,10 @@ class Volume: Decodable {
         var smallThumbnail: String?
         var thumbnail: String?
         
+        
+        init(_ coreBook: CoreBookStorage){
+            thumbnail = coreBook.imageUrl ?? "No image link"
+        }
     }
     
     

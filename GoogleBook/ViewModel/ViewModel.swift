@@ -9,11 +9,18 @@
 import Foundation
 
 
+protocol BookDelegate: class{
+    func updateView()
+}
 
 class ViewModel{
     
     
-    var currentVolume: Volume!
+    var currentVolume: Volume!{
+        didSet{
+            getBookDetail(currentVolume)
+        }
+    }
     
     var volumes = [Volume]() {
         didSet{
@@ -34,5 +41,7 @@ extension ViewModel {
         }
     }
     
- 
+    func getBookDetail(_ volume: Volume){
+        
+    }
 }

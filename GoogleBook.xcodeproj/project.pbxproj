@@ -14,6 +14,7 @@
 		0215A07723F0FE6100D36854 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215A07623F0FE6100D36854 /* DetailViewController.swift */; };
 		0215A07923F1118D00D36854 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215A07823F1118D00D36854 /* ViewControllerExtension.swift */; };
 		0215A07F23F116BA00D36854 /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215A07E23F116BA00D36854 /* DetailTableCell.swift */; };
+		0215A0C223F1DEA200D36854 /* resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215A0C123F1DEA200D36854 /* resizeImage.swift */; };
 		0215A0C923F2278600D36854 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0215A0C823F2278600D36854 /* CoreDataService.swift */; };
 		024AA81F23EDE6CA00A4D46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA81E23EDE6CA00A4D46B /* AppDelegate.swift */; };
 		024AA82123EDE6CA00A4D46B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA82023EDE6CA00A4D46B /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 		0215A07823F1118D00D36854 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		0215A07E23F116BA00D36854 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
 		0215A08023F1A63B00D36854 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		0215A0C123F1DEA200D36854 /* resizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resizeImage.swift; sourceTree = "<group>"; };
 		0215A0C823F2278600D36854 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		024AA81B23EDE6CA00A4D46B /* GoogleBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024AA81E23EDE6CA00A4D46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		0215A0C023F1DE7900D36854 /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				0215A0C123F1DEA200D36854 /* resizeImage.swift */,
+			);
+			path = "Helper Functions";
+			sourceTree = "<group>";
+		};
 		024AA81223EDE6CA00A4D46B = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 				024AA85523EDE8F700A4D46B /* ViewController */,
 				024AA85723EDE91400A4D46B /* Extensions */,
 				0215A07023F0A3FC00D36854 /* Service */,
+				0215A0C023F1DE7900D36854 /* Helper Functions */,
 				024AA85423EDE8D800A4D46B /* Storyboard */,
 				024AA81E23EDE6CA00A4D46B /* AppDelegate.swift */,
 				024AA82023EDE6CA00A4D46B /* SceneDelegate.swift */,
@@ -365,6 +376,7 @@
 				0215A07523F0A43000D36854 /* DownloadVolumeService.swift in Sources */,
 				024AA82323EDE6CA00A4D46B /* HomeViewController.swift in Sources */,
 				0200457323F0955D0075A9AD /* URLExtension.swift in Sources */,
+				0215A0C223F1DEA200D36854 /* resizeImage.swift in Sources */,
 				0215A07223F0A40F00D36854 /* GoogleBookAPI.swift in Sources */,
 				024AA81F23EDE6CA00A4D46B /* AppDelegate.swift in Sources */,
 				024AA85B23EDED2D00A4D46B /* GridViewController.swift in Sources */,
