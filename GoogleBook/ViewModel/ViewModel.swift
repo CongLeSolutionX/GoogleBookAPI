@@ -9,9 +9,6 @@
 import Foundation
 
 
-protocol BookDelegate: class{
-    func updateView()
-}
 
 class ViewModel{
     
