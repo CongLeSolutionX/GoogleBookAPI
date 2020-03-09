@@ -84,4 +84,15 @@ class GoogleBookTests: XCTestCase {
     
     
     
+    // Performance test
+    func test_StartDownload_Performance() {
+        let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=Harry+Potter")
+        
+        measure{
+            self.sut?.downloadTask(with: url!)
+        }
+    }
+    
+    
+    
 }
