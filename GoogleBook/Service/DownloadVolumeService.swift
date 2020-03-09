@@ -29,7 +29,7 @@ final class DownloadVolumeService {
             completion([])
             return
         }
-        print(url)
+        
         //API request
         URLSession.shared.dataTask(with: url) { (dat, _, err) in
             if let error = err {

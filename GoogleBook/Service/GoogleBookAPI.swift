@@ -14,7 +14,7 @@ struct GoogleBookAPI {
     var volume: Volume!
     
     let base = "https://www.googleapis.com/books/v1/volumes?q="
-    let GoogleAPIKey = "&key=AIzaSyA4uK_cz3fjD1ry39e5Fzy_nQtgRWR9AgA"
+    let GoogleAPIKey = "&key=AIzaSyA4uK_cz3fjD1ry39e5Fzy_nQtgRWR9AgA" // for tracking requests 
     
     
     init(_ value: String) {

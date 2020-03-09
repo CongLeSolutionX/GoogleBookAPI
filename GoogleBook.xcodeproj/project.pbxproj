@@ -21,7 +21,6 @@
 		024AA82623EDE6CA00A4D46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024AA82423EDE6CA00A4D46B /* Main.storyboard */; };
 		024AA82B23EDE6CD00A4D46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024AA82A23EDE6CD00A4D46B /* Assets.xcassets */; };
 		024AA82E23EDE6CD00A4D46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024AA82C23EDE6CD00A4D46B /* LaunchScreen.storyboard */; };
-		024AA83923EDE6CD00A4D46B /* GoogleBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA83823EDE6CD00A4D46B /* GoogleBookTests.swift */; };
 		024AA84423EDE6CE00A4D46B /* GoogleBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA84323EDE6CE00A4D46B /* GoogleBookUITests.swift */; };
 		024AA85923EDED1B00A4D46B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA85823EDED1B00A4D46B /* ListViewController.swift */; };
 		024AA85B23EDED2D00A4D46B /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AA85A23EDED2D00A4D46B /* GridViewController.swift */; };
@@ -32,6 +31,7 @@
 		02DAE9AA23F327120091EDE2 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAE9A923F327120091EDE2 /* FavoriteViewController.swift */; };
 		02DAE9AC23F3284C0091EDE2 /* FavoriteTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAE9AB23F3284C0091EDE2 /* FavoriteTableCell.swift */; };
 		02DAE9B223F33A440091EDE2 /* GoogleBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02DAE9B023F33A430091EDE2 /* GoogleBook.xcdatamodeld */; };
+		4CFA75992415EED7000990F8 /* GoogleBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA75982415EED7000990F8 /* GoogleBookTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,6 @@
 		024AA82D23EDE6CD00A4D46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024AA82F23EDE6CD00A4D46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024AA83423EDE6CD00A4D46B /* GoogleBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		024AA83823EDE6CD00A4D46B /* GoogleBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBookTests.swift; sourceTree = "<group>"; };
 		024AA83A23EDE6CD00A4D46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024AA83F23EDE6CE00A4D46B /* GoogleBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		024AA84323EDE6CE00A4D46B /* GoogleBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBookUITests.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		02DAE9A923F327120091EDE2 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		02DAE9AB23F3284C0091EDE2 /* FavoriteTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableCell.swift; sourceTree = "<group>"; };
 		02DAE9B123F33A440091EDE2 /* GoogleBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoogleBook.xcdatamodel; sourceTree = "<group>"; };
+		4CFA75982415EED7000990F8 /* GoogleBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBookTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 		024AA83723EDE6CD00A4D46B /* GoogleBookTests */ = {
 			isa = PBXGroup;
 			children = (
-				024AA83823EDE6CD00A4D46B /* GoogleBookTests.swift */,
+				4CFA75982415EED7000990F8 /* GoogleBookTests.swift */,
 				024AA83A23EDE6CD00A4D46B /* Info.plist */,
 			);
 			path = GoogleBookTests;
@@ -308,6 +308,7 @@
 					};
 					024AA83323EDE6CD00A4D46B = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1100;
 						TestTargetID = 024AA81A23EDE6CA00A4D46B;
 					};
 					024AA83E23EDE6CE00A4D46B = {
@@ -395,7 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024AA83923EDE6CD00A4D46B /* GoogleBookTests.swift in Sources */,
+				4CFA75992415EED7000990F8 /* GoogleBookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -546,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -597,10 +598,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = GoogleBookTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,6 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CongLe.EnhanceIT.GoogleBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleBook.app/GoogleBook";
@@ -619,10 +622,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = GoogleBookTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

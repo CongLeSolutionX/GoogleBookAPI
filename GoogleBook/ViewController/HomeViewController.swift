@@ -41,8 +41,10 @@ class HomeViewController: UIViewController {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.placeholder = "Type a title here..."
+        
         navigationItem.searchController?.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController?.searchBar.delegate = self
+        
         viewModel.getVolumes("Harry Potter") // a default search term
     }
     
