@@ -18,7 +18,7 @@ class ListViewController: UIViewController {
        
     }
     private func setupList() {
-        NotificationCenter.default.addObserver(forName: Notification.Name.VolumeId, object: nil, queue: .main){ [weak self] _ in
+        NotificationCenter.default.addObserver(forName: Notification.Name.VolumeId, object: nil, queue: .main) { [weak self] _ in
             self?.listTableView.reloadData()
             
         }
@@ -58,7 +58,7 @@ extension ListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         let currentVolume = viewModel.volumes[indexPath.row]
         viewModel.currentVolume = currentVolume
-        goToDetail(with:viewModel)
+        goToDetail(with: viewModel)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

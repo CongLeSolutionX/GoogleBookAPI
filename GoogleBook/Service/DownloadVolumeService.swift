@@ -10,7 +10,6 @@ import Foundation
 
 typealias VolumeHandler = ([Volume]) -> Void
 
-
 // making a singleton
 let volumeServiceShared = DownloadVolumeService.shared
 
@@ -18,8 +17,7 @@ final class DownloadVolumeService {
     static let shared = DownloadVolumeService()
     private init() {}
     
-    
-    func getVolumes(for name: String, completion: @escaping VolumeHandler ){
+    func getVolumes(for name: String, completion: @escaping VolumeHandler ) {
         guard let name = name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)else {
             completion([])
             return
@@ -52,12 +50,8 @@ final class DownloadVolumeService {
                     return
                 }
             }
-            
-            
+                        
         }.resume() // data task starts in  SUSPENDED state, MUST reusme for it to work
-        
-        
+                
     }
- 
-
 }

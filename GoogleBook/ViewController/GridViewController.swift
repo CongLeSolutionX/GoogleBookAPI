@@ -17,21 +17,17 @@ class GridViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGrid()
-
-  
     }
     
     private func setupGrid() {
-        NotificationCenter.default.addObserver(forName: Notification.Name.VolumeId, object: nil, queue: .main){ [weak self] _ in
+        NotificationCenter.default.addObserver(forName: Notification.Name.VolumeId, object: nil, queue: .main) { [weak self] _ in
             self?.gridCollectionView.reloadData()
         }
     }
-
-
 }
 
-//MARK: Additional functionality
-extension GridViewController: UICollectionViewDataSource{
+// MARK: Additional functionality
+extension GridViewController: UICollectionViewDataSource {
     
     // number of grid cell
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -52,8 +48,6 @@ extension GridViewController: UICollectionViewDataSource{
     }
     
 }
-
-
 extension GridViewController: UICollectionViewDelegateFlowLayout {
     //handle size of grid cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

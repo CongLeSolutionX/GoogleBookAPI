@@ -56,8 +56,7 @@ class DetailViewController: UIViewController {
     func checkFavBook() {
         if(coreDataServiceShared.checkForVolume(viewModel.currentVolume)) {
             isFavorite = true
-        }
-        else {
+        } else {
             isFavorite = false
         }
     }

@@ -14,6 +14,4 @@ class FavoriteViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
-
 }
