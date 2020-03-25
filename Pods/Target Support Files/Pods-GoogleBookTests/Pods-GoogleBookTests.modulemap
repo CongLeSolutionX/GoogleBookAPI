@@ -1,0 +1,6 @@
+framework module Pods_GoogleBookTests {
+  umbrella header "Pods-GoogleBookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

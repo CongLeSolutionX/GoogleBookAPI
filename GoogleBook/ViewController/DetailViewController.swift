@@ -15,8 +15,7 @@ class DetailViewController: UIViewController {
     var isFavorite = false
     
     var viewModel: ViewModel! // dependency injection
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDetailView()
@@ -29,28 +28,21 @@ class DetailViewController: UIViewController {
         // viewModel.delegate = self
         print("Im here in setupDetail\(isFavorite)")
         setupFavoriteButton()
-        
         detailTabelView.tableFooterView = UIView(frame: .zero)
-        
-        
     }
-    
-    func setupFavoriteButton(){
+    func setupFavoriteButton() {
         checkFavBook()
-        if (isFavorite){
+        if (isFavorite) {
             let addToMyFavorite = UIBarButtonItem(title: "Add to favorite",
                                                   style: .plain,
                                                   target: self,
                                                   action: #selector(addToFavoriteTapped))
             navigationItem.rightBarButtonItems = [addToMyFavorite]
-            
         }
-        
     }
-    
-    @objc func addToFavoriteTapped(){
+    @objc func addToFavoriteTapped() {
         // save into CoreData
-        if (isFavorite){
+        if (isFavorite) {
             coreDataServiceShared.saveVolume(viewModel.currentVolume)
             print("Saved a favorite book to Core Data!")
         } else {
@@ -61,31 +53,21 @@ class DetailViewController: UIViewController {
         
     }
     // check if we have the volume in our CoreData yet
-    func checkFavBook(){
-        if(coreDataServiceShared.checkForVolume(viewModel.currentVolume)){
+    func checkFavBook() {
+        if(coreDataServiceShared.checkForVolume(viewModel.currentVolume)) {
             isFavorite = true
         }
         else {
             isFavorite = false
         }
-        
     }
-    
-    
-    
-    
-    
 }
 
-
-
-//MARK: Additonal functionality
-extension DetailViewController: UITableViewDataSource{
-    
+// MARK: Additonal functionality
+extension DetailViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -95,11 +77,8 @@ extension DetailViewController: UITableViewDataSource{
             as? DetailTableCell else {
                 fatalError("The dequeued cell is not an instance of HomeTableViewCell.")
         }
-        
         // fetching the Volume data
         cell.volume = viewModel.currentVolume
         return cell
-        
     }
 }
-

@@ -17,11 +17,7 @@ class DetailTableCell: UITableViewCell {
     @IBOutlet weak var detailPublishedDateLabel: UILabel!
     @IBOutlet weak var detailPublisherLabel: UILabel!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-    
-
-    
     static let identifier = "DetailTableCell"
-    
     var volume: Volume! {
         didSet {
             detailTitleLabel.text = volume.bookInfo.title
@@ -36,6 +32,4 @@ class DetailTableCell: UITableViewCell {
             }
         }
     }
-  
-    
 }
