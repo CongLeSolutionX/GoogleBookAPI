@@ -8,40 +8,31 @@
 
 import Foundation
 
-
-protocol BookDelegate: class{
+protocol BookDelegate: class {
     func updateView()
 }
 
-class ViewModel{
-    
-    
-    var currentVolume: Volume!{
-        didSet{
+class ViewModel {
+    var currentVolume: Volume! {
+        didSet {
             getBookDetail(currentVolume)
         }
     }
-    
     var volumes = [Volume]() {
-        didSet{
+        didSet {
             NotificationCenter.default.post(name: Notification.Name.VolumeId, object: nil)
         }
     }
- 
-    
 }
-
 
 extension ViewModel {
     func getVolumes(_ search: String) {
-        volumeServiceShared.getVolumes(for: search){ [weak self] result in
+        volumeServiceShared.getVolumes(for: search) { [weak self] result in
             self?.volumes = result
             print("Volume Counts: \(result.count)")
-            
         }
     }
-    
-    func getBookDetail(_ volume: Volume){
+    func getBookDetail(_ volume: Volume) {
         // get all the Volume properties 
     }
 }

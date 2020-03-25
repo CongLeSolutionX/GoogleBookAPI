@@ -10,7 +10,6 @@ import XCTest
 @testable import GoogleBook
 
 class GoogleBookTests: XCTestCase {
-    
     var sut: URLSession! // SUT is System Under Test
     
     override func setUp() {
@@ -52,47 +51,35 @@ class GoogleBookTests: XCTestCase {
         // keep the test running until all expectations are fullfilled, or the timeout interval ends, whichever happen first
         wait(for: [promise], timeout: 5)
     }
-    
     // Asynchronous test: faster fail
     // Mechanism: This test waits only until the asynchronous method's completion handler is invoked.
-    //            This happens as soon as the app receives a response - either OK or error - from the server, which fullfills the expectation
+    // This happens as soon as the app receives a response - either OK or error - from the server, which fullfills the expectation
     // To experiment the failure of this test, we just change the domain name of the URL path or change the timeout limit
-    func testCallToGoogleBookCompletes(){
+    func testCallToGoogleBookCompletes() {
         // GIVEN
         let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=Harry+Potter")
         
         let promise = expectation(description: "Completion handler invoked")
         var statusCode: Int?
         var responseError: Error?
-        
         //WHEN
-        let dataTask = sut.dataTask(with: url!){ data, response, error in
+        let dataTask = sut.dataTask(with: url!) { data, response, error in
             statusCode = (response as? HTTPURLResponse)?.statusCode
             responseError = error
-            
             promise.fulfill()
         }
         dataTask.resume()
         
         wait(for: [promise], timeout: 1)
-        
         //THEN
         XCTAssertNil(responseError)
-        XCTAssertEqual(statusCode,200)
-        
+        XCTAssertEqual(statusCode, 200)
     }
-    
-    
-    
     // Performance test
     func test_StartDownload_Performance() {
         let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=Harry+Potter")
-        
-        measure{
+        measure {
             self.sut?.downloadTask(with: url!)
         }
     }
-    
-    
-    
 }

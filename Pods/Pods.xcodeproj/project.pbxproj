@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		20BA62626F497C9C62227FF50562EC60 /* Pods-GoogleBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B54B1CC8F01494A96B71A8377166876 /* Pods-GoogleBook-dummy.m */; };
+		6697D1EF2AA1578FC4F437A2E8C8FFF7 /* Pods-GoogleBook-GoogleBookUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C77722E5263FCD4EBC298C8AF7F8574E /* Pods-GoogleBook-GoogleBookUITests-dummy.m */; };
+		99C2A06608234500AC8259D04FDF4561 /* Pods-GoogleBookTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49061F7765970D3F7A6E4C55DF257CC4 /* Pods-GoogleBookTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27C2FD55745857A924EB1092896FBA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		C30FC502154AB8DDB362909C86D75FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		F22A9E47F317D1DE44958D473329652B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC21035800E7FC27B5BB7C6E5C159D7;
+			remoteInfo = "Pods-GoogleBook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04185304BE4C49D900534DA0124380EB /* Pods-GoogleBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBook.debug.xcconfig"; sourceTree = "<group>"; };
+		05ACC538091C463E19EE7EFF5A807ADD /* Pods-GoogleBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBook.release.xcconfig"; sourceTree = "<group>"; };
+		12553531B630378FB30CB92964E28037 /* Pods-GoogleBook-GoogleBookUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleBook-GoogleBookUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C62B56D0A284904CB8AC956ECA0BAA8 /* Pods-GoogleBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBookTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E54F09C69FC4827AEAD82A2B64C066F /* Pods-GoogleBook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleBook-acknowledgements.plist"; sourceTree = "<group>"; };
+		24EF3FB6EF942893ACD5B4005D82A0F9 /* Pods-GoogleBook-GoogleBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBook-GoogleBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		321565189D18BBA11B46263592602E9E /* libPods-GoogleBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		49061F7765970D3F7A6E4C55DF257CC4 /* Pods-GoogleBookTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleBookTests-dummy.m"; sourceTree = "<group>"; };
+		65837A1CC50B5F2A5F87121642A26688 /* Pods-GoogleBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		773F7FDED74FEE9D1850218D95A82B6C /* libPods-GoogleBook-GoogleBookUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleBook-GoogleBookUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		816DA56960EC3BA48EB91BA539CD6C94 /* Pods-GoogleBookTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleBookTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C71561926B5319C0AB72F4CD73C0182 /* Pods-GoogleBook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleBook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B54B1CC8F01494A96B71A8377166876 /* Pods-GoogleBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleBook-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF6F7601468EAB421A8D67732ADEEA05 /* libPods-GoogleBookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleBookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77722E5263FCD4EBC298C8AF7F8574E /* Pods-GoogleBook-GoogleBookUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleBook-GoogleBookUITests-dummy.m"; sourceTree = "<group>"; };
+		F18A2B9855AADF5450EACCE4EBA779E3 /* Pods-GoogleBookTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleBookTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F41EFE0037C9DCC0CD4D40DF77BE538F /* Pods-GoogleBook-GoogleBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBook-GoogleBookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F50820220B38C0954B51ED23F0382FA9 /* Pods-GoogleBook-GoogleBookUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleBook-GoogleBookUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4E213895958ED406C9747BAE238E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B329BE26BD85E6D970847B84062A2EA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90CFD1609059EABBAF8DA206E4DC887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066FEF0188801236789CC80D6FFE12B9 /* Pods-GoogleBook-GoogleBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F50820220B38C0954B51ED23F0382FA9 /* Pods-GoogleBook-GoogleBookUITests-acknowledgements.markdown */,
+				12553531B630378FB30CB92964E28037 /* Pods-GoogleBook-GoogleBookUITests-acknowledgements.plist */,
+				C77722E5263FCD4EBC298C8AF7F8574E /* Pods-GoogleBook-GoogleBookUITests-dummy.m */,
+				24EF3FB6EF942893ACD5B4005D82A0F9 /* Pods-GoogleBook-GoogleBookUITests.debug.xcconfig */,
+				F41EFE0037C9DCC0CD4D40DF77BE538F /* Pods-GoogleBook-GoogleBookUITests.release.xcconfig */,
+			);
+			name = "Pods-GoogleBook-GoogleBookUITests";
+			path = "Target Support Files/Pods-GoogleBook-GoogleBookUITests";
+			sourceTree = "<group>";
+		};
+		1F1CAFDA594FD566842C3A1B904755BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				321565189D18BBA11B46263592602E9E /* libPods-GoogleBook.a */,
+				773F7FDED74FEE9D1850218D95A82B6C /* libPods-GoogleBook-GoogleBookUITests.a */,
+				BF6F7601468EAB421A8D67732ADEEA05 /* libPods-GoogleBookTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		924BE9AE3B46354C9C83B60CCE9F1468 /* Pods-GoogleBook */ = {
+			isa = PBXGroup;
+			children = (
+				8C71561926B5319C0AB72F4CD73C0182 /* Pods-GoogleBook-acknowledgements.markdown */,
+				1E54F09C69FC4827AEAD82A2B64C066F /* Pods-GoogleBook-acknowledgements.plist */,
+				9B54B1CC8F01494A96B71A8377166876 /* Pods-GoogleBook-dummy.m */,
+				04185304BE4C49D900534DA0124380EB /* Pods-GoogleBook.debug.xcconfig */,
+				05ACC538091C463E19EE7EFF5A807ADD /* Pods-GoogleBook.release.xcconfig */,
+			);
+			name = "Pods-GoogleBook";
+			path = "Target Support Files/Pods-GoogleBook";
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A606AA29C7F25238B1C4F9435FF2F09F /* Pods-GoogleBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				F18A2B9855AADF5450EACCE4EBA779E3 /* Pods-GoogleBookTests-acknowledgements.markdown */,
+				816DA56960EC3BA48EB91BA539CD6C94 /* Pods-GoogleBookTests-acknowledgements.plist */,
+				49061F7765970D3F7A6E4C55DF257CC4 /* Pods-GoogleBookTests-dummy.m */,
+				65837A1CC50B5F2A5F87121642A26688 /* Pods-GoogleBookTests.debug.xcconfig */,
+				1C62B56D0A284904CB8AC956ECA0BAA8 /* Pods-GoogleBookTests.release.xcconfig */,
+			);
+			name = "Pods-GoogleBookTests";
+			path = "Target Support Files/Pods-GoogleBookTests";
+			sourceTree = "<group>";
+		};
+		B0F1D8CFF9C890D124F3932512BCE128 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				924BE9AE3B46354C9C83B60CCE9F1468 /* Pods-GoogleBook */,
+				066FEF0188801236789CC80D6FFE12B9 /* Pods-GoogleBook-GoogleBookUITests */,
+				A606AA29C7F25238B1C4F9435FF2F09F /* Pods-GoogleBookTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				1F1CAFDA594FD566842C3A1B904755BD /* Products */,
+				B0F1D8CFF9C890D124F3932512BCE128 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09CD4D39A3B1A871B611F0CC4851F3F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F68BD3E4B15603E23A6DE9B49E9CC21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6272C7242F4E177AA041AEB04BE50EFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		72D64BD3F074B5F856DB1FDE88A326E2 /* Pods-GoogleBook-GoogleBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D71A87F45D5FBF36E0781A038D09339 /* Build configuration list for PBXNativeTarget "Pods-GoogleBook-GoogleBookUITests" */;
+			buildPhases = (
+				4F68BD3E4B15603E23A6DE9B49E9CC21 /* Headers */,
+				24738DD48ED71DD889A892A5410ECDF8 /* Sources */,
+				B329BE26BD85E6D970847B84062A2EA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE0169614A1AADF34C6A58C1E3B68C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoogleBook-GoogleBookUITests";
+			productName = "Pods-GoogleBook-GoogleBookUITests";
+			productReference = 773F7FDED74FEE9D1850218D95A82B6C /* libPods-GoogleBook-GoogleBookUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B445C36F3B7E28A9C3E3816EA5866558 /* Pods-GoogleBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9989A58035F33263497BEABC2FFA87FC /* Build configuration list for PBXNativeTarget "Pods-GoogleBookTests" */;
+			buildPhases = (
+				6272C7242F4E177AA041AEB04BE50EFE /* Headers */,
+				6A740AECA23D524945A175F56AEA2507 /* Sources */,
+				D90CFD1609059EABBAF8DA206E4DC887 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2FAF14A0286839FACB5C10A2E6AF7E /* PBXTargetDependency */,
+			);
+			name = "Pods-GoogleBookTests";
+			productName = "Pods-GoogleBookTests";
+			productReference = BF6F7601468EAB421A8D67732ADEEA05 /* libPods-GoogleBookTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FCC21035800E7FC27B5BB7C6E5C159D7 /* Pods-GoogleBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4DD31F1259B56303150566B2CFB879B /* Build configuration list for PBXNativeTarget "Pods-GoogleBook" */;
+			buildPhases = (
+				09CD4D39A3B1A871B611F0CC4851F3F8 /* Headers */,
+				47829504E8551512680459E38FF68DA6 /* Sources */,
+				2C4E213895958ED406C9747BAE238E0A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85153CD9FC9D5EF789249672B772F937 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoogleBook";
+			productName = "Pods-GoogleBook";
+			productReference = 321565189D18BBA11B46263592602E9E /* libPods-GoogleBook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1F1CAFDA594FD566842C3A1B904755BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC21035800E7FC27B5BB7C6E5C159D7 /* Pods-GoogleBook */,
+				72D64BD3F074B5F856DB1FDE88A326E2 /* Pods-GoogleBook-GoogleBookUITests */,
+				B445C36F3B7E28A9C3E3816EA5866558 /* Pods-GoogleBookTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24738DD48ED71DD889A892A5410ECDF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6697D1EF2AA1578FC4F437A2E8C8FFF7 /* Pods-GoogleBook-GoogleBookUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47829504E8551512680459E38FF68DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BA62626F497C9C62227FF50562EC60 /* Pods-GoogleBook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A740AECA23D524945A175F56AEA2507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C2A06608234500AC8259D04FDF4561 /* Pods-GoogleBookTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D2FAF14A0286839FACB5C10A2E6AF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GoogleBook";
+			target = FCC21035800E7FC27B5BB7C6E5C159D7 /* Pods-GoogleBook */;
+			targetProxy = F22A9E47F317D1DE44958D473329652B /* PBXContainerItemProxy */;
+		};
+		85153CD9FC9D5EF789249672B772F937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 27C2FD55745857A924EB1092896FBA97 /* PBXContainerItemProxy */;
+		};
+		BEE0169614A1AADF34C6A58C1E3B68C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = C30FC502154AB8DDB362909C86D75FF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08CCD7E78728291264A399BA9AE86996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08D2F43B26E139CA20DAA3E0142F703A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05ACC538091C463E19EE7EFF5A807ADD /* Pods-GoogleBook.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EC788AACA1F9D2406BBB1084F008864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65837A1CC50B5F2A5F87121642A26688 /* Pods-GoogleBookTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11010EF62F0E9FBBEC09925669587EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41EFE0037C9DCC0CD4D40DF77BE538F /* Pods-GoogleBook-GoogleBookUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		146739269D4E7E4E6B55C1F401508575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EF3FB6EF942893ACD5B4005D82A0F9 /* Pods-GoogleBook-GoogleBookUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4397D28CD4D3FAA90195C03D3B4040E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04185304BE4C49D900534DA0124380EB /* Pods-GoogleBook.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0A74721F5EA0DDFC528D4AED94B221F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C62B56D0A284904CB8AC956ECA0BAA8 /* Pods-GoogleBookTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D86F6C8508ED371D7CBECC6632784BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D71A87F45D5FBF36E0781A038D09339 /* Build configuration list for PBXNativeTarget "Pods-GoogleBook-GoogleBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146739269D4E7E4E6B55C1F401508575 /* Debug */,
+				11010EF62F0E9FBBEC09925669587EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9989A58035F33263497BEABC2FFA87FC /* Build configuration list for PBXNativeTarget "Pods-GoogleBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EC788AACA1F9D2406BBB1084F008864 /* Debug */,
+				A0A74721F5EA0DDFC528D4AED94B221F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86F6C8508ED371D7CBECC6632784BD2 /* Debug */,
+				08CCD7E78728291264A399BA9AE86996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4DD31F1259B56303150566B2CFB879B /* Build configuration list for PBXNativeTarget "Pods-GoogleBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4397D28CD4D3FAA90195C03D3B4040E8 /* Debug */,
+				08D2F43B26E139CA20DAA3E0142F703A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

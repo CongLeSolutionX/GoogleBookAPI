@@ -9,15 +9,10 @@
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var gridImage: UIImageView!
-    
     @IBOutlet weak var gridAuthorLabel: UILabel!
     @IBOutlet weak var gridDateLabel: UILabel!
-    
     static let identifier = "HomeCollectionViewCell"
-    
-    
     var volume: Volume! {
         didSet {
             gridAuthorLabel.text = volume.bookInfo.authors.first ?? "No author"
@@ -28,7 +23,4 @@ class HomeCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-    
-    
-    
 }

@@ -10,7 +10,6 @@ import UIKit
 
 class ListViewController: UIViewController {
     @IBOutlet weak var listTableView: UITableView!
-    
     var viewModel: ViewModel! //dependency injection 
     
     override func viewDidLoad() {
@@ -26,13 +25,11 @@ class ListViewController: UIViewController {
         listTableView.tableFooterView = UIView(frame: .zero)
     }
     
-
 }
-
 
 // MARK: Additional Functionality
 
-extension ListViewController: UITableViewDataSource{
+extension ListViewController: UITableViewDataSource {
     // number of row
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.volumes.count
@@ -57,7 +54,6 @@ extension ListViewController: UITableViewDataSource{
 }
 
 extension ListViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let currentVolume = viewModel.volumes[indexPath.row]

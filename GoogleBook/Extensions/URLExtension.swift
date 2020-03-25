@@ -10,9 +10,8 @@ import UIKit
 
 typealias ImageHandler = (UIImage?) -> Void
 
-
 extension URL {
-    func downloadImage(completion: @escaping ImageHandler){
+    func downloadImage(completion: @escaping ImageHandler) {
         URLSession.shared.dataTask(with: self) { (dat, _, _) in
             if let data = dat {
                 let image = UIImage(data: data)
@@ -21,6 +20,5 @@ extension URL {
                 }
             }
         }.resume()
-        
     }
 }

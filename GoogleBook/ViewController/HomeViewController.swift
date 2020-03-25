@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var gridContainer: UIView!
     
     private let searchController = UISearchController(searchResultsController: nil)
-    
     let viewModel = ViewModel() //dependency injection
     
     override func viewDidLoad() {
@@ -22,11 +21,7 @@ class HomeViewController: UIViewController {
         setupSearchBar()
         
     }
-    
-    
-    
     @IBAction func segmentSwitched(_ sender: UISegmentedControl) {
-        
         if sender.selectedSegmentIndex == 0 {
             listContainer.alpha = 1
             gridContainer.alpha = 0
@@ -35,41 +30,30 @@ class HomeViewController: UIViewController {
             gridContainer.alpha = 1
         }
     }
-    
     private func setupSearchBar () {
         navigationItem.title = "Google Books"
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.placeholder = "Type a title here..."
-        
         navigationItem.searchController?.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController?.searchBar.delegate = self
-        
         viewModel.getVolumes("Harry Potter") // a default search term
     }
-    
-    
     // pass view model to containers via segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ListSegue"{
-            let listVC = segue.destination as! ListViewController
+            let listVC = segue.destination as! ListViewController // swiftlint:disable:this force_cast
             listVC.viewModel = viewModel
         } else if segue.identifier == "GridSegue" {
-            let gridVC = segue.destination as! GridViewController
+            let gridVC = segue.destination as! GridViewController // swiftlint:disable:this force_cast
             gridVC.viewModel = viewModel
         }
-        
     }
-    
-    
-    
 }
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let search = searchBar.text?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return }
         viewModel.getVolumes(search)
-        
     }
-    
 }
